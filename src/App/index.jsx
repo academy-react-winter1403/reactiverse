@@ -5,7 +5,7 @@ import './App.css'
 import Login from '../screens/Login'
 
 function App() {
-  const [count, setcount] = useState(0)
+  const [count, setCount] = useState(0)
 
   return (
     <>
