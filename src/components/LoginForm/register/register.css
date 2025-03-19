@@ -1,0 +1,57 @@
+/* .registerPage{
+    background:white;
+    width: 800px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+} */
+/* .left{
+    border: 1px solid blue;
+    width: 500px;
+} */
+/* .right > .regForm{
+    border: 1px solid red;
+    padding: 5px;
+    width: 300px;
+    color: black;
+    border-radius: 20px;
+    text-align: end;
+} */
+/* .right > .regForm > h2{
+    border: 1px solid red;
+    display: inline;
+} */
+/* .right > .regForm > input{
+    width: 265px;
+    height: 35px;
+    padding: 5px;
+    margin: 10px;
+    background: #d4d4d4;
+    color: black;
+    text-align: end;
+    font-size: 17px;
+    border: 0 none;
+    border-radius: 10px;
+    outline: none;
+} */
+/* .right > .regForm > .reg{
+    color: black;
+    display: block;
+    width:150px;
+    height: 40px;
+    font-size: 25px;
+    background-color: rgb(57, 109, 252);
+    text-align: center;
+    padding: 0px;
+    border-radius: 10px;
+    margin: 10px auto;
+} */
+/* .right > .regForm > .question > p,
+.right > .regForm > .question > a{
+    border: 1px solid red;
+    display: inline;
+    padding: 5px;
+} */
+
+
