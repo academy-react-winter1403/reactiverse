@@ -1,4 +1,6 @@
 import axios from "axios";
+import { getItem } from "../common/storage.services";
+import { deleteApi } from "../api";
 
 const baseURL = import.meta.env.VITE_API_BASE_URL;
 
@@ -11,11 +13,17 @@ const onSucc = (res) => {
 };
 
 const onErr = (err) => {
+  if(err.response.status === 401){
+    deleteApi();
+  }
   return Promise.reject(err);
 };
 
 instance.interceptors.response.use(onSucc, onErr);
 instance.interceptors.request.use((opt) => {
+  const token = getItem('token');
+
+  opt.headers.Authorization = 'Bearer ' + token;
   return opt;
 });
 
