@@ -3,7 +3,7 @@ import React from 'react'
 // import Login from '../../components/LoginForm/login'
 import { authRoutes } from '../../config/router/roots.jsx'
 import { RouterProvider } from 'react-router-dom'
-import { getApi } from '../../core/services/api/index.js'
+// import { getApi } from '../../core/services/api/index.js'
 
 const login = () => {
 
