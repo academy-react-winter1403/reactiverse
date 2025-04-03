@@ -3,7 +3,7 @@ import React from 'react'
 
 const Error = () => {
   return (
-    <div className='errorPage'>
+    <div className='errorPage text-black'>
         <div className=' font-medium text-7xl'>404</div>
         <img className='m-auto my-5' src='./errorIcon.png'/>
         <h1 className='mb-5'>NOT FOUND</h1>

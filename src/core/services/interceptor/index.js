@@ -8,6 +8,9 @@ const instance = axios.create({
   baseURL: baseURL,
 });
 
+
+
+
 const onSucc = (res) => {
   return res.data;
 };
