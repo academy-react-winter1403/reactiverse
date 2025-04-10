@@ -6,15 +6,16 @@ import RegisterVerify from "../../components/LoginForm/verify/registerVerify/ind
 import LoginVerify from "../../components/LoginForm/verify/loginVerify/index.jsx";
 import Blog from "../../components/Blog/index.jsx";
 import Courses from "../../components/Courses/index.jsx";
+import Teacher from "../../components/Teachers/index.jsx";
 
 
 export const Routes = createBrowserRouter([
-    {/*...commonRoute*/},
     {path:"/register" , element: <Register/>},
     {path:"/register/verify" , element:<RegisterVerify/>},
     {path:"/login" , element: <Login/>},
     {path:"/login/verify" , element:<LoginVerify/>},    
     {path:"*" , element:<Error/>},
     {path:"/blog" , element:<Blog/>},
-    {path:"/courses" , element:<Courses/>}
+    {path:"/courses" , element:<Courses/>},
+    {path:"/teacher" , element:<Teacher/>}
 ])

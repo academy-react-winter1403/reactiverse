@@ -18,7 +18,7 @@ const Header = () => {
       <div className='Menu flex gap-5 h-full font-bold items-center'>
         <a href='*' className='cursor-pointer'>خانه</a>     
         <a href='/Courses' className='cursor-pointer'>دوره ها</a>     
-        <a href='*' className='cursor-pointer'>اساتید</a>             
+        <a href='/comment/Teacher' className='cursor-pointer'>اساتید</a>             
         <a href='/blog' className='cursor-pointer'>اخبار</a>      
         <a href='*' className='cursor-pointer'>ارطبات با ما</a>    
         <Logo/>              
