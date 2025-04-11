@@ -1,45 +1,34 @@
-import React , {useEffect}  from 'react'
+import React  from 'react'
 import Picture from '../../../assets/img/picture'
 import Logo from '../../../assets/img/logo'
 import {Formik , Form , Field} from 'formik'
-import * as yup from 'yup'
+// import Input from '../../common/Input'
 import './logResponsive.css'
 import { LoginApi } from '../../../core/services/api/auth.api'
 import { setItem } from '../../../core/services/common/storage.services'
-import { getApi } from '../../../core/services/api'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  const navigate = useNavigate()
 
-  const validation = yup.object().shape({
-    Number: yup.number().required()
-  })
 
 
   const loginUser = async (value)=> { 
-      const userObj = {phoneOrGmail: "09385871288",password: "123456",rememberMe: true}
+      const userObj = {phoneOrGmail: value.Number,password: value.Password,rememberMe: true}
   
       const user = await LoginApi(userObj);
 
-      if(value.Number === userObj.phoneOrGmail && value.Password === userObj.password){
-        console.log(user);
+      if(user.success === true){
         alert(user.message)
-        window.location.href = "/login/verify"
+        navigate("/login/verify")
+        setItem('token' , user.token)
       }
-      if(value.Number !== userObj.phoneOrGmail || value.Password !== userObj.password){
-        alert("مقادیر وارد شده نامعتبر است")
+      if(user.success !== true){
+        alert(user.message)
       }
 
-      setItem('token' , user.token)
   }
 
-  const getApiFunction = async () => {
-    const user = await getApi();
-    console.log(user);
-}
-
-useEffect(() => {
-  getApiFunction();
-}, [])
 
 
   return (
@@ -51,7 +40,7 @@ useEffect(() => {
             <Formik
             initialValues={{Number:"",Password:""}} 
             onSubmit={loginUser} 
-            validationSchema={validation}
+            // validationSchema={validation}
             >
               <Form className='logForm text-black p-5 rounded-2xl w-80 text-end'>
                 <h2 className='inline text-3xl font-medium p-2.5'>آکادمی سپهر</h2>
@@ -63,10 +52,13 @@ useEffect(() => {
                 </div>
                 <Field  className="w-3xs h-9 p-2.5 text-black mb-5 bg-gray-400 rounded-xl text-end outline-0" name="Number" placeholder="شماره موبایل"/>   
                 <Field  className="w-3xs h-9 p-2.5 text-black mb-5 bg-gray-400 rounded-xl text-end outline-0" name="Password" placeholder="رمز ورود"/>                 
+                {/* <Input Name="Number" placeHolder="شماره موبایل"/> */}
+                {/* <Input Name="Password" placeHolder="رمز ورود"/> */}
                 <button className="text-black w-36 h-10 block my-1.5 mx-auto rounded-2xl bg-blue-500 font-medium text-2xl" type='submit'>ادامه</button>
                 <a href=''>حریم خصوصی</a>
               </Form>
             </Formik>
+
           </div>
         </div>
   )
