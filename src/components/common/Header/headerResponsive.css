@@ -6,6 +6,9 @@
 }
 @media screen and (max-width:420px){
     .Menu{
-        font-size: 10px;
+        font-size: 12px;
+    }
+    .Header{
+        display: block;
     }
 }

@@ -3,6 +3,7 @@ import Header from '../common/Header'
 import Footer from '../common/Footer'
 import { TeachInfoHandler } from './TeachInfoHandler'
 import { GetTeachersInfo } from '../../core/services/api/teacher'
+import './teacherResponsive.css'
 
 const Teacher = () => {
 
@@ -20,7 +21,7 @@ const Teacher = () => {
 
 
   return (
-    <div className='w-280'>
+    <div className='Teacher w-280'>
         <Header/>
         <div className='text-end'>
             <h2 className='text-3xl font-bold pb-10'>اساتید</h2>
@@ -28,7 +29,7 @@ const Teacher = () => {
                 <p className='font-bold text-3xl'> « خانه</p>
                 <p className='font-bold text-3xl'> اساتید </p>
             </div>
-            <div className='my-30'>
+            <div className='my-15'>
               <TeachInfoHandler Teacher={Teacher}/>
             </div>
         </div>

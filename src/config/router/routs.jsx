@@ -10,18 +10,18 @@ import Teacher from "../../components/Teachers/index.jsx";
 import StepOne from "../../components/LoginForm/register/step1/index.jsx";
 import StepTwo from "../../components/LoginForm/register/step2/index.jsx";
 import StepThree from "../../components/LoginForm/register/step3/index.jsx";
+import CourseDetail from "../../components/CourseDetail/index.jsx";
 
 
 export const Routes = createBrowserRouter([
-    // {path:"/register" , element: <Register/>},
     {path:"/registerStepOne" , element: <StepOne/>},
     {path:"/registerStepTwo" , element: <StepTwo/>},
     {path:"/registerStepThree" , element: <StepThree/>},
-    // {path:"/register/verify" , element:<RegisterVerify/>},
     {path:"/login" , element: <Login/>},
     {path:"/login/verify" , element:<LoginVerify/>},    
     {path:"*" , element:<Error/>},
     {path:"/blog" , element:<Blog/>},
     {path:"/courses" , element:<Courses/>},
+    {path:"/courses/courseDetail/:courseId" , element:<CourseDetail/>},    
     {path:"/teacher" , element:<Teacher/>}
 ])
