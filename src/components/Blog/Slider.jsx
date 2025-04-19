@@ -11,8 +11,8 @@ const Slider = ({NewsList,Query,swiperRef}) => {
       slidesPerView={1}
       className="duration-500 relative right-0 w-full flex">
       <SwiperSlide><Content NewsList={NewsList} Query={Query}/></SwiperSlide>
-      <SwiperSlide><Content NewsList={NewsList} /></SwiperSlide>
-      <SwiperSlide><Content NewsList={NewsList}/> </SwiperSlide>     
+      <SwiperSlide><Content NewsList={NewsList} Query={Query}/></SwiperSlide>
+      <SwiperSlide><Content NewsList={NewsList} Query={Query}/></SwiperSlide>     
     </Swiper>
   )
 }

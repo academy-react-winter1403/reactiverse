@@ -73,14 +73,15 @@ const showPrice = () => {
 
 }
 
-const  getList = async() =>{
+const getList = async() =>{
     const course = await GetCourseList(Query); 
     setCourseList(course);
 }
 
 useEffect(() => {
-    getList()
+    getList();
 }, [flag])
+
 
 
   return (

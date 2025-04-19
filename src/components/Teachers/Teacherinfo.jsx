@@ -2,12 +2,12 @@ import React from 'react'
 
 const TeacherInfo = ({TeacherName}) => {
   return (
-    <div className='dark bg-gray-700 my-5 w-200 items-center m-auto rounded-2xl flex flex-row-reverse'>
-    <img className='m-5 rounded-4xl w-90 h-70 overflow-hidden' src='./8.png'/>
+    <div className='TeacherInfo dark bg-gray-700 my-5 w-200 items-center m-auto rounded-2xl flex flex-row-reverse'>
+    <img className='TeacherImg m-2 rounded-4xl w-90 h-70 overflow-hidden' src='./8.png'/>
     <div className='m-5 w-150'>
         <h2 className='text-4xl p-2 font-bold'>{TeacherName}</h2>
         <h2 className='text-2xl p-2 font-bold'>این یک متن توضیحات کوتاه درمورد استاد است</h2>
-        <div className='border-b-1 flex gap-5 flex-wrap justify-center p-7'>
+        <div className='border-b-1 flex gap-5 flex-wrap justify-center p-2'>
             <div className='bg-gray-500 rounded-xl p-1 w-43 flex justify-between gap-4'>
                 <img className='w-6' src='./9.png'/>
                 <div className='font-bold'>دکتری الافی</div>

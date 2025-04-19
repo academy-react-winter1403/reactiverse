@@ -9,7 +9,7 @@ const SearchBar = ({handleFlag,setQuery}) => {
       setQuery(value.search)
       
       handleFlag()
-      console.log(value.search)
+      // console.log(value.search)
     }
 
 

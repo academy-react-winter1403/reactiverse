@@ -18,7 +18,7 @@ const Content = ({NewsList,Query}) => {
     }
 
 return (
-    <div className='w-280'>
+    <div className='w-full'>
         <div className='flex justify-between gap-4 border-solid p-3 my-10'>
             {NewsList.slice(0,4).map((item,index) => {
             return <News key={index} title={item.title} description={item.miniDescribe}/>

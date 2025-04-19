@@ -2,7 +2,7 @@ import React from 'react'
 
 const CourseInfo = ({TeacherName,Cost,Title,Description,Status,Technology,Level}) => {
   return (
-    <div className='CourseInfo dark w-3xs rounded-[30px] overflow-hidden mt-7 bg-gray-700 relative'>
+  <div className='CourseInfo dark w-3xs rounded-[30px] min-h-130 overflow-hidden mt-7 bg-gray-700 relative'>
     <img className=' rounded-[30px]' src='./6.png'/>
     <h2 className='text-end p-2 font-bold text-xl'>{Title}</h2>
     <p className='text-end p-2'>{Description}</p>
@@ -14,7 +14,7 @@ const CourseInfo = ({TeacherName,Cost,Title,Description,Status,Technology,Level}
         <div className='text-xl font-bold'>تومان{Cost}</div>
         <div className='bg-gray-500 absolute right-3 rounded-2xl px-1.5'>10:56:31</div>
     </div>
-</div>
+  </div>
   )
 }
 
