@@ -3,9 +3,8 @@ import { Formik , Form , Field } from 'formik'
 import Picture from '../../../assets/img/picture'
 import Logo from '../../../assets/img/logo'
 import { useEffect } from 'react'
-// import * as yup from 'yup'
 import './logVerifyResponsive.css'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const LoginVerify = () => {
@@ -36,7 +35,6 @@ const LoginVerify = () => {
         <Formik
         initialValues={{code:""}}
         onSubmit={OnSubmit}
-        // validationSchema={validation}
         >
           <Form className='verifyForm text-black p-5 rounded-2xl w-80 text-end'>
             <h2 className='inline text-3xl font-medium p-2.5'>آکادمی سپهر</h2>
@@ -47,7 +45,7 @@ const LoginVerify = () => {
                 <Field className="w-50 h-10 p-2.5 text-black m-1.5 bg-gray-400 rounded-xl text-center outline-0" name="code" maxLength="5" />                              
               </div>       
               <button className="text-black w-36 h-10 block my-1.5 mx-auto rounded-2xl bg-blue-500 font-medium text-2xl" type='submit'>ورود</button>
-            <a href='#'>حریم خصوصی</a>
+            <Link to={'#'}>حریم خصوصی</Link>
           </Form>
       </Formik>
     </div>

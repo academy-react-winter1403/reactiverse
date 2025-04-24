@@ -12,7 +12,7 @@ const Blog = () => {
   const [Query, setQuery] = useState("")
   const [flag, setFlag] = useState(false)
   const [NewsList, setNewsList] = useState([]);
-  const swiperRef = useRef(null);
+  const swiperRef = useRef();
 
   const handleFlag = () => {
     setFlag(!flag)

@@ -1,5 +1,4 @@
 export const DarkMode = () => {
-    // console.log("first")
     const elements = document.querySelectorAll(".light , .dark");
 
     elements.forEach(Element => {

@@ -2,7 +2,6 @@ import React from 'react'
 import News from './News'
 
 const Content = ({NewsList,Query}) => {
-    // console.log(NewsList)
 
     const remove = document.getElementsByClassName("remove");
 

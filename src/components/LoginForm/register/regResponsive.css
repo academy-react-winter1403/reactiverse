@@ -1,6 +1,5 @@
 @media screen and (max-width:900px){
     .registerPage{
-        /* border: 10px solid red; */
         width: 600px;
         transition: 0.5s;
     }

@@ -3,7 +3,7 @@ import { Formik , Form , Field } from 'formik'
 import Logo from '../../../../assets/img/logo'
 import Picture from '../../../../assets/img/picture'
 import '../regResponsive.css'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const StepThree = () => {
     const navigate = useNavigate()
@@ -29,14 +29,14 @@ const StepThree = () => {
                 <Logo/>
                 <h3 className='font-medium text-2xl m-5'>ثبت نام</h3>
                 <div className='p-1.5'>
-                  <a className='inline' href='/login'>وارد شوید</a>
+                  <Link className='inline' to={'/login'}>وارد شوید</Link>
                   <p className='inline'>حساب کاربری دارید؟</p>
                 </div>
                   <Field className="w-3xs h-9 p-2.5 text-black mb-5 bg-gray-400 rounded-xl text-end outline-0" type="text" name="email" placeholder="ایمیل"/>
                   <Field className="w-3xs h-9 p-2.5 text-black mb-5 bg-gray-400 rounded-xl text-end outline-0" type="text" name="phoneNumber" placeholder="شماره تماس"/>                
                   <Field className="w-3xs h-9 p-2.5 text-black mb-5 bg-gray-400 rounded-xl text-end outline-0" type="text" name="password" placeholder="رمز عبور"/>
                 <button className="text-black w-36 h-10 block my-1.5 mx-auto rounded-2xl bg-blue-500 font-medium text-2xl" type='submit'>ادامه</button>
-                <a href='#'>قوانین و شرایط</a>
+                <Link to={'#'}>قوانین و شرایط</Link>
               </Form>
           </Formik>
         </div>

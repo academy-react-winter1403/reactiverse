@@ -1,8 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Login from "../../components/LoginForm/login/index.jsx";
-// import Register from "../../components/LoginForm/register/index.jsx";
 import Error from "../../components/error/error.jsx";
-// import RegisterVerify from "../../components/LoginForm/verify/registerVerify/index.jsx";
 import LoginVerify from "../../components/LoginForm/loginVerify/index.jsx";
 import Blog from "../../components/Blog/index.jsx";
 import Courses from "../../components/Courses/index.jsx";

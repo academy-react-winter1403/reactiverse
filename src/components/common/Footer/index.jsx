@@ -1,5 +1,6 @@
 import React from 'react'
 import './footerResponsive.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -12,27 +13,27 @@ const Footer = () => {
       <div className='Links flex justify-center  bg-transparent dark w-4/7'>
         <div className='text-right w-44'>
           <div className='font-bold text-2xl text-gray-500'>لینک های مرتبط</div>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
         </div>
         <div className='text-right w-44'>
           <div className='font-bold text-2xl text-gray-500'>لینک های مرتبط</div>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
         </div>
         <div className='text-right w-44'>
           <div className='font-bold text-2xl text-gray-500'>لینک های مرتبط</div>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
-          <a href='*'>لینک های مرتبط</a>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
+          <Link to={'*'}>لینک های مرتبط</Link>
         </div>
       </div>
     </div>

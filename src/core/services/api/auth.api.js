@@ -1,4 +1,3 @@
-// import http from '../interceptor'
 import axios from "axios";
 
 export const LoginApi = async (user) => {

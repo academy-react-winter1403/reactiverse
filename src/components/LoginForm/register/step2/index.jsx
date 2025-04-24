@@ -3,20 +3,12 @@ import { Formik , Form , Field } from 'formik'
 import Picture from '../../../../assets/img/picture'
 import Logo from '../../../../assets/img/logo'
 import { useEffect } from 'react'
-// import * as yup from 'yup'
 import '../regResponsive.css'
 import { useNavigate } from 'react-router-dom'
 
 const StepTwo = () => {
     const navigate = useNavigate();
 
-//   const validation = yup.object().shape({
-//     code1: yup.number().required(),
-//     code2: yup.number().required(),
-//     code3: yup.number().required(),
-//     code4: yup.number().required(),   
-//     code5: yup.number().required(),     
-//   })
 
 const OnSubmit = () => {
         navigate("/registerStepThree")
@@ -26,7 +18,6 @@ useEffect(() => {
     setTimeout(() => {
         alert('12345')
     }, 3000);
-    // clearInterval(timer)
 },[])
 
 
@@ -48,7 +39,7 @@ return (
                     <Field className="w-50 h-10 p-2.5 text-black m-1.5 bg-gray-400 rounded-xl text-center outline-0" name="code" maxLength="5" type="text" />
                 </div>       
                 <button className="text-black w-36 h-10 block my-1.5 mx-auto rounded-2xl bg-blue-500 font-medium text-2xl" type='submit'>ثبت نام</button>
-                <a href='#'>قوانین و شرایط</a>
+                <Link to={'#'}>قوانین و شرایط</Link>
             </Form>
         </Formik>
     </div>

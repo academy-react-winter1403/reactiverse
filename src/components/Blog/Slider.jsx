@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 const Slider = ({NewsList,Query,swiperRef}) => {
   return (
     <Swiper       
-      onSwiper={(swiper) => (swiperRef.current = swiper)} // ذخیره instance
+      onSwiper={(swiper) => (swiperRef.current = swiper)}
       slidesPerView={1}
       className="duration-500 relative right-0 w-full flex">
       <SwiperSlide><Content NewsList={NewsList} Query={Query}/></SwiperSlide>
