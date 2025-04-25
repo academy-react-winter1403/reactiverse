@@ -3,6 +3,7 @@
   --radius-xl:34px;
   --radius-fullXl:100%;
 }
+@custom-variant dark (&:where(.dark, .dark *));
 .backgroundSize{
   background-size:20px 85%;
 }
@@ -17,14 +18,17 @@
 body{
   direction: rtl;
 }
+html.dark>body{
+  background-color: #2a2525;
+}
 @keyframes move{
   0%{
     left:800px;
-
+    transform: scaleY(0);
   }
   100%{
+    transform: scaleY(1);
     left:0;
-    transform: rotate(360deg);
   }
 }
 @keyframes moveIt{
