@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import Logo from '../../../assets/img/logo'
 import { DarkMode } from '../darkmode'
@@ -30,4 +31,14 @@ const Header = () => {
   )
 }
 
+=======
+import React from 'react'
+
+const Header = () => {
+  return (
+    <div>Header</div>
+  )
+}
+
+>>>>>>> blogDetail
 export default Header

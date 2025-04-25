@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "tailwindcss";
 
 :root {
@@ -72,3 +73,9 @@ button:focus-visible {
   }
 }
 
+=======
+@import 'tailwindcss';
+.myTransform{
+    transform: scale(0.9) translate(10px) rotate(10deg);
+}
+>>>>>>> blogDetail
