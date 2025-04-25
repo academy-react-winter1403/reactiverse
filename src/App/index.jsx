@@ -3,15 +3,15 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Login from '../screens/Login'
+import { authRoutes } from '../config/router/roots'
+import { commonRoutes } from '../config/router/common.router'
+import { RouterProvider } from 'react-router-dom'
 
 function App() {
-  const [count, setcount] = useState(0)
 
   return (
     <>
-     {/* routers are here */}
-     <Login/>
-     {/* <RouterProvider router={authRoutes} /> */}
+     <RouterProvider router={commonRoutes} />
     </>
   )
 }

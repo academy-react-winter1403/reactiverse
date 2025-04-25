@@ -21,12 +21,6 @@
     .registerPage > .left{
         display: none;
     }
-    .registerPage > .right > .regForm{
-        width: 290px;
-    }    
-    .registerPage > .right > .regForm > input{
-        width: 240px;
-    }    
 }
 @media screen and (max-height:550px){
     .registerPage > .right > .regForm > input{
