@@ -2,7 +2,7 @@ import React from 'react'
 
 const TeacherInfo = ({TeacherName}) => {
   return (
-    <div className='TeacherInfo dark bg-gray-700 my-5 w-200 items-center m-auto rounded-2xl flex flex-row-reverse'>
+    <div className='TeacherInfo light bg-gray-200 my-5 w-200 items-center m-auto rounded-2xl flex flex-row-reverse'>
     <img className='TeacherImg m-2 rounded-4xl w-90 h-70 overflow-hidden' src='./8.png'/>
     <div className='m-5 w-150'>
         <h2 className='text-4xl p-2 font-bold'>{TeacherName}</h2>

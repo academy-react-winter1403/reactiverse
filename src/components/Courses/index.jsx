@@ -87,11 +87,11 @@ useEffect(() => {
   return (
     <div className='Courses w-[1100px]'>
         <Header/>
-        <div className='mb-15 text-left bg-transparent flex justify-between dark'><p className='ml-5 font-bold'>دوره آموزشی 5</p><h2 className='font-bold text-2xl mr-5'>دوره ها</h2></div>
+        <div className='mb-15 text-left bg-transparent flex justify-between light'><p className='ml-5 font-bold'>دوره آموزشی 5</p><h2 className='font-bold text-2xl mr-5'>دوره ها</h2></div>
         <div className='mb-15 w-full'>
         <SearchBar CourseList={CourseList} setQuery={setQuery} handleFlag={handleFlag}/>
             <div className='Main relative flex flex-row-reverse gap-2'>  
-                <div className='Filters dark bg-gray-700 font-bold rounded-xl mt-7 h-69 w-1/4'>
+                <div className='Filters light bg-gray-200 font-bold rounded-xl mt-7 h-69 w-1/4'>
                     <div onClick={deleteFilter} className='border-2 border-gray-400 rounded-xl m-2 p-2 hover:bg-gray-600'>حذف فیلتر ها</div>
                     <div className='flex justify-between border-2 border-gray-400 rounded-xl m-2 p-2'>
                         <div onClick={complete} className='border-2 border-gray-400 border-solid w-10 h-6 relative rounded-2xl cursor-pointer'>
@@ -106,7 +106,7 @@ useEffect(() => {
                             <img className='mt-2 w-4 h-3 rounded-[4px] bg-gray-500' src='./7.png'/>
                             <div>تکنولوژی</div>                            
                         </div>
-                        <div className='absolute rounded-b-2xl w-full h-0 duration-300 overflow-hidden outline-0 outline-gray-400 dark bg-gray-700 z-50 group-hover:h-44 group-hover:outline-2'>
+                        <div className='absolute rounded-b-2xl w-full h-0 duration-300 overflow-hidden outline-0 outline-gray-600 light bg-gray-200 z-50 group-hover:h-44 group-hover:outline-2'>
                             <h2 onClick={() => filterByTechnology("123React")}  className='border-2 p-1 border-gray-400 mb-2 rounded-b-2xl hover:bg-red-600'> 123React</h2>
                             <h2 onClick={() => filterByTechnology("NextJs")} className='border-2 p-1 border-gray-400 mb-2 rounded-2xl hover:bg-amber-600'>NextJs</h2>
                             <h2 onClick={() => filterByTechnology("فرانت اند2")} className='border-2 p-1 border-gray-400 mb-2 rounded-2xl hover:bg-yellow-400'>فرانت اند2</h2>
@@ -118,7 +118,7 @@ useEffect(() => {
                             <img className='mt-2 w-4 h-3 rounded-[4px] bg-gray-500' src='./7.png'/>
                             <div>دسته بندی</div>                            
                         </div>
-                        <div className='absolute rounded-b-2xl w-full h-0 duration-300 overflow-hidden outline-0 outline-gray-400 dark bg-gray-700 group-hover:h-34 group-hover:outline-2'>
+                        <div className='absolute rounded-b-2xl w-full h-0 duration-300 overflow-hidden outline-0 outline-gray-600 light bg-gray-200 group-hover:h-34 group-hover:outline-2'>
                             <h2 onClick={() => abcd("نامبتدی 1233")} className='border-2 p-1 border-gray-400 mb-2 rounded-b-2xl hover:bg-blue-700'>نامبتدی 1234</h2>
                             <h2 onClick={() => abcd("متوسط")} className='border-2 p-1 border-gray-400 mb-2 rounded-2xl hover:bg-cyan-500'>متوسط</h2>
                             <h2 onClick={() => abcd("پیشرفته")} className='border-2 p-1 border-gray-400 mb-2 rounded-2xl hover:bg-green-600'>پیشرفته</h2>

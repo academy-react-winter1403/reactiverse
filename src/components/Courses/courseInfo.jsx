@@ -2,7 +2,7 @@ import React from 'react'
 
 const CourseInfo = ({TeacherName,Cost,Title,Description,Status,Technology,Level}) => {
   return (
-  <div className='CourseInfo dark w-3xs rounded-[30px] min-h-130 overflow-hidden mt-7 bg-gray-700 relative'>
+  <div className='CourseInfo light w-3xs rounded-[30px] min-h-130 overflow-hidden mt-7 bg-gray-200 relative'>
     <img className=' rounded-[30px]' src='./6.png'/>
     <h2 className='text-end p-2 font-bold text-xl'>{Title}</h2>
     <p className='text-end p-2'>{Description}</p>

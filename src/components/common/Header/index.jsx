@@ -13,7 +13,7 @@ const Header = () => {
 
 
   return (
-    <div className='Header relative flex justify-between flex-row-reverse items-center w-full mt-5 mb-15 rounded-2xl px-4 bg-gray-700 dark'>
+    <div className='Header relative flex justify-between flex-row-reverse items-center w-full mt-5 mb-15 rounded-2xl px-4 bg-gray-200 light'>
       <div className='Menu flex justify-center gap-5 h-full font-bold items-center'>
         <Link to={`/`} className='cursor-pointer'>خانه</Link>     
         <Link to={`/Courses`} className='cursor-pointer'>دوره ها</Link>     
@@ -24,7 +24,7 @@ const Header = () => {
       </div>
       <div className=' flex h-full gap-1.5 items-center justify-center'>
         <img onClick={Profile} className='cursor-pointer bg-transparent w-9 h-9' src='../../../../public/1.png'/>
-        <img id='image' onClick={DarkMode} className='cursor-pointer bg-transparent w-9 h-9' src='../../../../public/4.png'/>
+        <img id='image' onClick={DarkMode} className='cursor-pointer bg-transparent w-9 h-9' src='../../../../public/2.png'/>
       </div>
     </div>
   )

@@ -51,7 +51,7 @@ const Blog = () => {
         <span className='text-gray-500 font-bold text-2xl w-40'>روزنامه سپهر</span>
         <span className='border-b-7 border-gray-500 border-solid text-right text-xl text-gray-500 font-bold w-120'>رونامه سپهر</span>  
       </div>      
-      <div className='dark bg-gray-700 rounded-2xl w-full relative overflow-hidden mb-10'>
+      <div className='light bg-gray-200 rounded-2xl w-full relative overflow-hidden mb-10'>
         <Slider NewsList={NewsList} Query={Query} swiperRef={swiperRef}/>
         <div className='Buttons flex h-8 justify-center mb-5'>
           <img className='cursor-pointer w-8' onClick={left} src='./left.png'/>
