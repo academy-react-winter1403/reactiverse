@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @media screen and (max-width:900px){
     .registerPage{
         width: 600px;
@@ -33,35 +33,4 @@
         padding: 0px;
         margin: 5px;
     }
-=======
-@media screen and (max-width:900px){
-    .registerPage{
-        /* border: 10px solid red; */
-        width: 600px;
-        transition: 0.5s;
-    }
-    .registerPage > .right{
-        margin: auto;
-    }
-    .registerPage > .left{
-        width: 300px;
-        height: 300px;
-        align-self: center;
-    }
-}
-@media screen and (max-width:700px){
-    .registerPage{
-        width: 300px;
-        transition: 0.5s;
-    }    
-    .registerPage > .left{
-        display: none;
-    }
-}
-@media screen and (max-height:550px){
-    .registerPage > .right > .regForm > input{
-        padding: 0px;
-        margin: 5px;
-    }
->>>>>>> blogDetail
 }

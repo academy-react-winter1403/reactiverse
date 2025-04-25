@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react'
 import './footerResponsive.css'
 import { Link } from 'react-router-dom'
@@ -41,14 +41,4 @@ const Footer = () => {
   )
 }
 
-=======
-import React from 'react'
-
-const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
-}
-
->>>>>>> blogDetail
 export default Footer

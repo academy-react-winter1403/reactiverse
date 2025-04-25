@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @media screen and (max-width:900px){
     .loginPage{
         width: 600px;
@@ -27,35 +27,4 @@
         padding: 0px;
         margin: 5px;
     }
-=======
-@media screen and (max-width:900px){
-    .loginPage{
-        border: 10px solid red;
-        width: 600px;
-        transition: 0.5s;
-    }
-    .loginPage > .right{
-        margin: auto;
-    }
-    .loginPage > .left{
-        width: 300px;
-        height: 300px;
-        align-self: center;
-    }
-}
-@media screen and (max-width:700px){
-    .loginPage{
-        width: 380px;
-        transition: 0.5s;
-    }    
-    .loginPage > .left{
-        display: none;
-    }
-}
-@media screen and (max-height:550px){
-    .loginPage > .right > .logForm > input{
-        padding: 0px;
-        margin: 5px;
-    }
->>>>>>> blogDetail
 }
