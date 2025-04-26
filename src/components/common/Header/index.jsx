@@ -1,8 +1,12 @@
 import React from 'react'
+import Botton from './Button'
+import MenuItems from './MenuItems'
+
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+    </div>
   )
 }
 
