@@ -1,0 +1,63 @@
+@media screen and (max-width:1200px){
+    .Detail{
+        width: 900px;
+        transition: 0.5s;
+    }
+}
+@media screen and (max-width:970px){
+    .Detail{
+        width: 700px;
+        transition: 0.5s;
+    }
+    .comments{
+        width: 500px;
+        height: 300px;
+    }
+    .Buy{
+        height: 250px;
+    }
+}
+@media screen and (max-width:770px){
+    .Detail{
+        width: 500px;
+        transition: 0.5s;
+    }
+    .Buy{
+        height: 520px;
+        display: block;
+    }
+    .BuyImg{
+        width: 400px;
+        height: 250px;
+        margin: auto;
+    }
+    .main{
+        display: block;
+    }
+    .description{
+        width: 100%;
+    }
+    .side{
+        width:100%;
+    }
+    .comments{
+        width: 100%;
+    }
+}
+@media screen and (max-width:550px){
+    .Detail{
+        width: 400px;
+        transition: 0.5s;
+    }
+    .BuyImg{
+        width: 350px;
+        height: 200px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:420px){
+    .Detail{
+        width: 370px;
+        transition: 0.5s;
+    }
+}

@@ -1,17 +1,20 @@
-import { useState } from 'react'
-// import reactLogo from '../assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
-import Login from '../screens/Login'
+import { RouterProvider } from 'react-router-dom'
+import { Routes } from '../config/router/routs'
+import { useEffect } from 'react'
+import LandingHolder from '../components/LandingHolder/index.jsx'
 
 function App() {
-  const [count, setcount] = useState(0)
+
+  useEffect(() => {
+    document.body.classList.add("bg-white")
+  }, [])
+  
 
   return (
     <>
-     {/* routers are here */}
-     <Login/>
-     {/* <RouterProvider router={authRoutes} /> */}
+      <RouterProvider router={Routes}/>
+      {/* <LandingHolder/> */}
     </>
   )
 }

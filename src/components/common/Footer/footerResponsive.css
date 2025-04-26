@@ -1,0 +1,14 @@
+@media screen and (max-width:950px){
+    .Footer{
+        display: block;
+    }
+    .join{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .Links{
+        width: 100%;
+        font-size: 13px;
+    }
+}
+

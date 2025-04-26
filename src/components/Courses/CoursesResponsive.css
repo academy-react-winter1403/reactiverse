@@ -1,0 +1,56 @@
+@media screen and (max-width:1200px){
+    .Courses{
+        width: 900px;
+    }
+    .CourseInfo{
+        width: 205px;
+    }
+}
+@media screen and (max-width:950px){
+    .Courses{
+        width: 700px;
+        transition: 0.3s;
+    }
+    .CourseInfo{
+        width: 240px;
+    }
+    .Price{
+        width: 100%;
+    }
+}
+@media screen and (max-width:750px){
+    .Courses{
+        width: 550px;
+        transition: 0.3s;
+    }
+    .Main{
+        display: block;
+    }
+    .Filters{
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        width: 100%;
+        height: 150px;
+    }
+    .CourseInfoHandler{
+        width: 100%;
+    }
+}
+@media screen and (max-width:550px){
+    .Courses{
+        width: 430px;
+        transition: 0.3s;
+    }    
+    .CourseInfo{
+        width: 300px;
+    }
+}
+@media screen and (max-width:420px){
+    .Courses{
+        width:350px;
+    }
+    .Filters{
+        height: 200px;
+    }
+}
