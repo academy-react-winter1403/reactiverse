@@ -9,7 +9,8 @@ import StepOne from "../../components/LoginForm/register/step1/index.jsx";
 import StepTwo from "../../components/LoginForm/register/step2/index.jsx";
 import StepThree from "../../components/LoginForm/register/step3/index.jsx";
 import CourseDetail from "../../components/CourseDetail/index.jsx";
-
+import BlogDetail from '../../components/BlogDetail/index.jsx'
+import Landing from '../../components/LandingHolder/index.jsx'
 
 export const Routes = createBrowserRouter([
     {path:"/registerStepOne" , element: <StepOne/>},
@@ -21,5 +22,7 @@ export const Routes = createBrowserRouter([
     {path:"/blog" , element:<Blog/>},
     {path:"/courses" , element:<Courses/>},
     {path:"/courses/courseDetail/:courseId" , element:<CourseDetail/>},    
-    {path:"/teacher" , element:<Teacher/>}
+    {path:"/teacher" , element:<Teacher/>},
+    {path:"/",element:<Landing/>},
+    {path:"/blog/detail/:id",element:<BlogDetail/>}
 ])

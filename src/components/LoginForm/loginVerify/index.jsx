@@ -22,7 +22,7 @@ const LoginVerify = () => {
   useEffect(() => {
     setTimeout(() => {
       alert('12345') 
-    },5000);
+    },4000);
     
   },[])
 

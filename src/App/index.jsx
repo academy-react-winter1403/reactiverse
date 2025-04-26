@@ -2,6 +2,7 @@ import './App.css'
 import { RouterProvider } from 'react-router-dom'
 import { Routes } from '../config/router/routs'
 import { useEffect } from 'react'
+import LandingHolder from '../components/LandingHolder/index.jsx'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <RouterProvider router={Routes}/>
+      {/* <LandingHolder/> */}
     </>
   )
 }

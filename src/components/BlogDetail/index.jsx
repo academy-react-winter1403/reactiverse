@@ -28,10 +28,10 @@ const BlogDetail = () => {
   }, [id]);
   return (
     <>
-    
+      <Header/>
       <News news={news} />
       <NewsFromSameCategory data={data} />
-    
+      <Footer/>
     </>
   );
 };

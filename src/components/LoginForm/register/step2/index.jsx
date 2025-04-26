@@ -4,7 +4,7 @@ import Picture from '../../../../assets/img/picture'
 import Logo from '../../../../assets/img/logo'
 import { useEffect } from 'react'
 import '../regResponsive.css'
-import { useNavigate } from 'react-router-dom'
+import {Link, useNavigate } from 'react-router-dom'
 
 const StepTwo = () => {
     const navigate = useNavigate();
