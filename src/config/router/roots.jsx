@@ -1,18 +1,18 @@
-import { createBrowserRouter } from "react-router-dom";
-import Login from "../../components/LoginForm/login";
-import Register from "../../components/LoginForm/register";
-import Error from "../../components/error/error.jsx";
-import RegisterVerify from "../../components/LoginForm/verify/registerVerify/index.jsx";
-import LoginVerify from "../../components/LoginForm/verify/loginVerify/index.jsx";
-import LandingHolder from "../../components/LandingHolder/index.jsx";
+// import { createBrowserRouter } from "react-router-dom";
+// import Login from "../../components/LoginForm/login";
+// import Register from "../../components/LoginForm/register";
+// import Error from "../../components/error/error.jsx";
+// import RegisterVerify from "../../components/LoginForm/verify/registerVerify/index.jsx";
+// import LoginVerify from "../../components/LoginForm/verify/loginVerify/index.jsx";
+// import LandingHolder from "../../components/LandingHolder/index.jsx";
 
 
-export const authRoutes = createBrowserRouter([
-    {/*...commonRoute*/},
-    {path: "/" , element: <LandingHolder /> },
-    {path:"/register" , element: <Register/>},
-    {path:"/register/verify" , element:<RegisterVerify/>},
-    {path:"/login" , element: <Login/>},
-    {path:"/login/verify" , element:<LoginVerify/>},    
-    // {path:"*" , element:<Error/>}
-])
+// export const authRoutes = createBrowserRouter([
+//     {/*...commonRoute*/},
+//     {path: "/" , element: <LandingHolder /> },
+//     {path:"/register" , element: <Register/>},
+//     {path:"/register/verify" , element:<RegisterVerify/>},
+//     {path:"/login" , element: <Login/>},
+//     {path:"/login/verify" , element:<LoginVerify/>},    
+//     // {path:"*" , element:<Error/>}
+// ])

@@ -4,7 +4,7 @@ import { getApi } from '../../../core/services/api'
 
 const CardsWrapper = ({topCourse}) => {
   return (
-    <div className='grid grid-cols-4 m-auto gap-[50px] w-[1300px]'>
+    <div className='grid grid-cols-4 relative left-[60px] gap-[50px] w-[1300px] z-[100] mt-10'>
       {
         topCourse?.map((item) => {
           return(

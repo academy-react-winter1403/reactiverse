@@ -14,7 +14,7 @@ import Background from './Background'
 
 const LandingHolder = () => {
   return (
-    <div>
+    <div className='h-[6000px]'>
       <Background/>
 
         <Header/>

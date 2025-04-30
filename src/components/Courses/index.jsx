@@ -87,11 +87,12 @@ useEffect(() => {
   return (
     <div className='Courses w-[1100px]'>
         <Header/>
-        <div className='mb-15 text-left bg-transparent flex justify-between light'><p className='ml-5 font-bold'>دوره آموزشی 5</p><h2 className='font-bold text-2xl mr-5'>دوره ها</h2></div>
-        <div className='mb-15 w-full'>
+        <div className='mb-9 text-left bg-transparent flex justify-between light mt-9'><h2 className='font-bold text-2xl mr-5 text-[#5c5c5c]'>دوره ها</h2><p className='ml-5 font-bold'>دوره آموزشی 5</p></div>
+        <div className='mb-14 w-full'>
         <SearchBar CourseList={CourseList} setQuery={setQuery} handleFlag={handleFlag}/>
             <div className='Main relative flex flex-row-reverse gap-2'>  
-                <div className='Filters light bg-gray-200 font-bold rounded-xl mt-7 h-69 w-1/4'>
+            <CourseInfoHandler CourseList={CourseList}/>
+                <div className='Filters light bg-gray-200  font-bold rounded-xl mt-7 h-[275px] w-1/4'>
                     <div onClick={deleteFilter} className='border-2 border-gray-400 rounded-xl m-2 p-2 hover:bg-gray-600'>حذف فیلتر ها</div>
                     <div className='flex justify-between border-2 border-gray-400 rounded-xl m-2 p-2'>
                         <div onClick={complete} className='border-2 border-gray-400 border-solid w-10 h-6 relative rounded-2xl cursor-pointer'>
@@ -127,7 +128,7 @@ useEffect(() => {
                     <div className='border-2 border-gray-400 rounded-xl m-2'>
                         <output className='block'>{Price} از0 تا</output>
                         <input 
-                        className='Price appearance-none w-50 accent-gray-500 bg-red-700 h-2 rounded-lg cursor-pointer'
+                        className='Price appearance-none w-50 accent-gray-500 bg-[#23496b] h-2 rounded-lg cursor-pointer'
                         type='range' 
                         value={Price} 
                         step="10000" 
@@ -137,7 +138,6 @@ useEffect(() => {
                         onInput={showPrice}/>                         
                     </div>                                                           
                 </div>  
-                <CourseInfoHandler CourseList={CourseList}/>
             </div>
         </div>
         <Footer/>
