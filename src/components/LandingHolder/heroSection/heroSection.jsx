@@ -16,19 +16,18 @@ const HeroSection = () => {
     setSearchBox(data.courseFilterDtos);
   };
   return (
-    <div className="bg-[#eee] min-h-screen p-8 font-sans w-auto h-auto: flex ">
+    <div className=" min-h-screen p-8 font-sans w-full h-auto: flex ">
       <img
         src={header}
         alt="image"
-        className="block md:hidden lg:block w-[700px] h-[500px] relative top-[100px] right-[750px]"
+        className="block md:hidden lg:block w-[700px] h-[500px] relative top-[100px] right-[450px]"
       />
-      <h3 className="font-semibold text-[37px] text-[rgb(35,73,107)] relative top-[200px] left-[390px]">
-        {" "}
-        دنبال چی میگردی؟{" "}
+      <h3 className="font-semibold text-[37px] text-[rgb(35,73,107)] relative top-[150px] left-[600px]">
+        دنبال چی میگردی؟
       </h3>
-      <h2 className="relative top-[250px] left-[690px] text-[#6b6b6b] text-[20px]">
+      {/* <h2 className="relative top-[450px] left-[690px] text-[#6b6b6b] text-[16px]">
         دیگه وقتشه یه تکونی به خودت بدی...
-      </h2>
+      </h2> */}
       <div>
         <Formik initialValues={{ search: "" }} onSubmit={searchBoxFn}>
           <Form>
@@ -36,11 +35,11 @@ const HeroSection = () => {
               type="search"
               name="search"
               placeholder="تو فقط اسم ببر..."
-              className="absolute top-[340px] left-[920px] p-[20px] rounded-2xl w-[400px] border-[rgb(56,112,161)] border-[2px]"
+              className="absolute top-[340px] left-[920px] p-[20px] rounded-2xl w-[400px] border-[rgb(56,112,161)] border-[2px] bg-[#e9e9e9]"
             />
             <button
               type="submit"
-              className="bg-[rgb(35,73,107)] size-12 relative left-[652px] top-[318px] rounded-xl bg-[url(./assets/img/search.png)] bg-[2px] bg-no-repeat "
+              className="bg-[rgb(35,73,107)] size-12 relative left-[560px] top-[215px] rounded-xl bg-[url(./assets/img/search.png)] bg-[2px] bg-no-repeat "
             ></button>
             <div className="item z-[90000] bg-[#d0deee] rounded-[5px] w-[400px] h-auto absolute left-[920px] top-[410px]">
               {searchBox.length === 0
@@ -72,7 +71,7 @@ const HeroSection = () => {
       <h2 className="absolute top-[420px] right-[350px] text-[34px] text-[#444] ">
         آکادمی سپهر
       </h2>
-      <h3 className="absolute w-[380px] text-[19px] right-[350px] text-[#6b6b6b] top-[470px]">
+      <h3 className="absolute w-[390px] text-[17px] right-[350px] text-[#6b6b6b] top-[470px]">
         آکاپمی آموزشی سپهر مکانی برای پیشرفت تو تا بتونی مهارت های مورد نیزار
         برای طراحی وب رو هرچه سریعتر و با بهترین روش یاد بگیری
       </h3>

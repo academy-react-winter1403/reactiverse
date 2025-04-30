@@ -5,7 +5,7 @@ import Slider from '../../common/Slider'
 
 const News = () => {
   return (
-    <div className='h-auto'>
+    <div className='h-auto z-30'>
       <BigTitle title="آخرین اخبار"/>
       <InfoCard/>
       <Slider numerator="1" denominator="2"/>

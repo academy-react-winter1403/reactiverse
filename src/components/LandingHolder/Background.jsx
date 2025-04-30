@@ -15,18 +15,18 @@ const Background = () => {
   return (
     <div>
       <img className='absolute right-[-100px] top-[-100px]' src={path1} alt="" />
-      <img className='absolute top-[1200px] left-[-40%] z-[-100]' src={path2} alt="" />
-      <img className='absolute top-[1550px] left-[-150px] z-[-50]' src={path3} alt="" />
-      <img className='absolute top-[1600px] left-[530px] z-[-50]' src={path4} alt="" />
-      <img className='absolute top-[3100px] right-[-800px] z-[-100]' src={path5} alt="" />
-      <img className='absolute top-[3900px] z-[-50]' src={path6} alt="" />
+      <img className='absolute top-[1200px] left-[-50%] z-[1]' src={path2} alt="" />
+      <img className='absolute top-[1550px] left-[-150px] z-[1]' src={path3} alt="" />
+      <img className='absolute top-[1600px] left-[530px] z-[1]' src={path4} alt="" />
+      <img className='absolute top-[3100px] right-[-800px] z-[1]' src={path5} alt="" />
+      <img className='absolute top-[3900px] right-0 z-[1]' src={path6} alt="" />
       <div>
-        <img className='h-[370px] absolute top-[4300px] z-[-50]' src={path7} alt="" />
-        <img className='absolute top-[4664px] right-[560px] z-[-50]' src={path8} alt="" />
+        <img className='h-[370px] absolute top-[4365px] z-[1] right-[-6px]' src={path7} alt="" />
+        <img className='absolute top-[4729px] right-[555px] z-[10]' src={path8} alt="" />
       </div>
-      <img className='absolute top-[4000px] right-[1000px] z-[-50]' src={path9} alt="" />
-      <img className='absolute top-[5000px] right-[560px] z-[-50]' src={path10} alt="" />
-      <img className='absolute top-[5550px] right-[515px] z-[-50]' src={path11} alt="" />
+      <img className='absolute top-[4200px] right-[1000px] z-[1]' src={path9} alt="" />
+      <img className='absolute top-[5000px] right-[560px] z-[1]' src={path10} alt="" />
+      <img className='absolute top-[5550px] right-[510px] z-[1]' src={path11} alt="" />
     </div>
   )
 }

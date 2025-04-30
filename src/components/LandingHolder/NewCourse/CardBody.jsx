@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardBody = ({title, desc, name, price, time}) => {
   return (
-    <div className='bg-white w-[100%] h-[84%] relative bottom-[150px] rounded-3xl pt-[140px] pr-[17px]'>
+    <div className='bg-white w-[100%] h-[84%] relative bottom-[150px] rounded-3xl pt-[140px] pr-[17px] z-[100] light'>
       <h2 className='font-bold text-[18px] '>{title}</h2>
       <h3 className='truncate text-[#9b9b9b] w-[90%]  pt-[10px]'>. {desc} </h3>
       <h4 className='pt-[20px] pb-[20px] text-sm text-[#23496b]'>.{name} </h4>

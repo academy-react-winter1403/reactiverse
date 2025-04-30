@@ -17,15 +17,15 @@ const Content = ({NewsList,Query}) => {
     }
 
 return (
-    <div className='w-full'>
+    <div className='w-full p-6 m-2'>
         <div className='flex justify-between gap-4 border-solid p-3 my-10'>
             {NewsList.slice(0,4).map((item,index) => {
             return <News key={index} title={item.title} description={item.miniDescribe}/>
         })}
         </div>
-        <div className='BigPic remove h-90 w-full relative overflow-hidden'>
+        <div className='BigPic remove h-[350px] w-full relative overflow-hidden border-l-[2px] border-gray-700 border-r-[2px] pr-2 pl-2 left-2 m-auto'>
             <img className='w-full absolute ' src='./5.png'/>
-            <div className='bg-black flex flex-wrap  w-full h-full opacity-50 z-30 text-white'>
+            <div className='bg-black flex flex-wrap  w-full h-full opacity-50 z-30 text-white  p-[100px] '>
                 <h2 className='text-5xl self-center mx-auto'>سرتیتر خبر</h2>
                 <p className='p-5 mx-auto w-full'>این یک متن تست برای وبلاگ آکادمی سپهر است این یک متن برای وبلاگ اکادمی سپهر است این یک متن برای وبلاگ اکادمی سپهر است این یک متن تست برای وبلاگ آکادمی سپهر است این یک متن برای وبلاگ اکادمی سپهر است این یک متن برای وبلاگ اکادمی سپهر است</p>
             </div>

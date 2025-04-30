@@ -19,7 +19,7 @@ useEffect(() => {
 return (
   <div className='pb-[200px]'>
     <BigTitle title="جدید ترین دوره ها"/>
-    <div className='relative bottom-6 right-[1500px]'><More title2="مشاهده همه"/></div>
+    <div className='relative bottom-6'><More title2="مشاهده همه"/></div>
     <CardsWrapper topCourse={topCourse}/>
   </div>
   

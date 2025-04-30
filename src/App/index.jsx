@@ -6,9 +6,9 @@ import LandingHolder from '../components/LandingHolder/index.jsx'
 
 function App() {
 
-  useEffect(() => {
-    document.body.classList.add("bg-white")
-  }, [])
+  // useEffect(() => {
+  //   document.body.classList.add("bg-white")
+  // }, [])
   
 
   return (

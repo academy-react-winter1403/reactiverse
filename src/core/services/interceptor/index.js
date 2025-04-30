@@ -1,4 +1,3 @@
-
 import axios from "axios";
 import { getItem } from "../common/storage.services";
 import { deleteApi } from "../api";
@@ -9,15 +8,12 @@ const instance = axios.create({
   baseURL: baseURL,
 });
 
-
-
-
 const onSucc = (res) => {
   return res.data;
 };
 
 const onErr = (err) => {
-  if(err.response.status === 401){
+  if (err.response.status === 401) {
     deleteApi();
   }
   return Promise.reject(err);
@@ -25,12 +21,10 @@ const onErr = (err) => {
 
 instance.interceptors.response.use(onSucc, onErr);
 instance.interceptors.request.use((opt) => {
-  const token = getItem('token');
+  const token = getItem("token");
 
-  opt.headers.Authorization = 'Bearer ' + token;
+  opt.headers.Authorization = "Bearer " + token;
   return opt;
 });
 
 export default instance;
-
-
