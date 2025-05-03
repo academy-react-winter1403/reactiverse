@@ -1,6 +1,6 @@
 import axios from "axios";
 import { getItem } from "../common/storage.services";
-import { deleteApi } from "../api";
+//import { deleteApi } from "../api";
 
 const baseURL = import.meta.env.VITE_API_BASE_URL;
 
@@ -17,7 +17,7 @@ const onSucc = (res) => {
 
 const onErr = (err) => {
   if(err.response.status === 401){
-    deleteApi();
+    //deleteApi();
   }
   return Promise.reject(err);
 };

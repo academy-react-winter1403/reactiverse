@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
-import { GetCourseList } from "../../core/services/api/Courses";
+import getMyCourses from "../../core/services/api/panel.mycourses";
 import { useState } from "react";
 import { useEffect } from "react";
 import CourseInfoHandler from "./courseinfoHandler";
@@ -12,10 +12,7 @@ const Courses = () => {
   const [Query, setQuery] = useState("");
   const [flag, setFlag] = useState(false);
   const [CourseList, setCourseList] = useState([]);
-  const [originalList, setOriginalList] = useState([]);
-  const [Completed, setCompleted] = useState(false);
-  const [Price, setPrice] = useState(150000000);
-  const [isFiltered, setIsFiltered] = useState(false);
+ 
 
   // const handleFlag = () => {
   //   setFlag(!flag);
@@ -73,7 +70,7 @@ const Courses = () => {
   // };
 
   const getList = async () => {
-    const course = await GetCourseList(Query);
+    const course = await getMyCourses();
     setCourseList(course);
   };
 
