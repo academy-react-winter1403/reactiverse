@@ -6,7 +6,7 @@ import { getApi } from '../../../core/services/api'
 
 const NewCourse = () => {
   const [topCourse, setTopCourse] = useState([])
-  console.log(topCourse)
+  // console.log(topCourse)
 
   const fetchData = async () => {
     const data = await getApi("/Home/GetCoursesTop?Count=4")

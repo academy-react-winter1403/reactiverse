@@ -8,7 +8,7 @@ const BestSellers = () => {
 
   
   const [topCourse, setTopCourse] = useState([])
-  console.log(topCourse)
+  // console.log(topCourse)
 
   const fetchData = async () => {
     const data = await getApi("/Home/GetCoursesTop?Count=8")

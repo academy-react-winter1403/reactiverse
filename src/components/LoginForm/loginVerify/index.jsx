@@ -2,7 +2,6 @@ import React from 'react'
 import { Formik , Form , Field } from 'formik'
 import Picture from '../../../assets/img/picture'
 import Logo from '../../../assets/img/logo'
-import { useEffect } from 'react'
 import './logVerifyResponsive.css'
 import { Link, useNavigate } from 'react-router-dom'
 
@@ -19,12 +18,6 @@ const LoginVerify = () => {
   
 
 
-  useEffect(() => {
-    setTimeout(() => {
-      alert('12345') 
-    },4000);
-    
-  },[])
 
   return (
         <div className='verifyPage bg-white rounded-2xl flex p-5 w-3xl'>

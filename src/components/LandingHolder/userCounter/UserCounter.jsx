@@ -5,8 +5,7 @@ import { getApi } from '../../../core/services/api'
 const UserCounter = () => {
 
   const [LandingReport, setLandingReport] = useState([])
-  console.log(LandingReport , "landing"
-  )
+  // console.log(LandingReport , "landing")
   
 
   const fetchData = async () => {

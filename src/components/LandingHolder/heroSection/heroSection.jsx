@@ -7,7 +7,7 @@ import image from "../../../assets/img/educat.png";
 
 const HeroSection = () => {
   const [searchBox, setSearchBox] = useState([]);
-  console.log(searchBox, "search");
+  // console.log(searchBox, "search");
 
   const searchBoxFn = async (value) => {
     const data = await getApi(

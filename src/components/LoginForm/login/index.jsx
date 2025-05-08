@@ -20,7 +20,7 @@ const Login = () => {
 
       if(user.success === true){
         alert(user.message)
-        navigate("/login/verify")
+        navigate("/")
         setItem('token' , user.token)
       }
       if(user.success !== true){
@@ -32,7 +32,7 @@ const Login = () => {
 
 
   return (
-        <div className='loginPage bg-white rounded-2xl flex p-5 w-3xl'>
+        <div className='loginPage bg-white rounded-2xl flex flex-row-reverse p-5 w-3xl h-[550px] '>
           <div className='left'>
             <Picture/>
           </div>
@@ -41,16 +41,16 @@ const Login = () => {
             initialValues={{Number:"",Password:""}} 
             onSubmit={loginUser} 
             >
-              <Form className='logForm text-black p-5 rounded-2xl w-80 text-end'>
+              <Form className='logForm text-black p-5 rounded-2xl w-80 text-center'>
                 <h2 className='inline text-3xl font-medium p-2.5'>آکادمی سپهر</h2>
                 <Logo/>
                 <h3 className='font-medium text-2xl m-5'>ورود</h3>
                 <div className='p-1.5'>
-                  <Link className='inline' to={'/register'}>ثبت نام کنید</Link>
-                  <p className='inline'>حساب کاربری ندارید؟</p>
+                <p className='inline'>حساب کاربری ندارید؟</p>
+                  <Link className='inline text-blue-700' to={'/register'}>ثبت نام کنید</Link>
                 </div>
-                <Field  className="w-3xs h-9 p-2.5 text-black mb-5 bg-gray-400 rounded-xl text-end outline-0" name="Number" placeholder="شماره موبایل"/>   
-                <Field  className="w-3xs h-9 p-2.5 text-black mb-5 bg-gray-400 rounded-xl text-end outline-0" name="Password" placeholder="رمز ورود"/>                 
+                <Field  className="w-[230px] h-9 p-2.5 text-black mb-5 bg-gray-500 rounded-xl text-start outline-0" name="Number" placeholder="شماره موبایل یا ایمیل"/>   
+                <Field  className="w-[230px] h-9 p-2.5 text-black mb-5 bg-gray-500 rounded-xl text-start outline-0" name="Password" placeholder="رمز ورود"/>                 
                 <button className="text-black w-36 h-10 block my-1.5 mx-auto rounded-2xl bg-blue-500 font-medium text-2xl" type='submit'>ادامه</button>
                 <Link to={''}>حریم خصوصی</Link>
               </Form>

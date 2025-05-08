@@ -13,4 +13,4 @@ const deleteApi = () => {
   localStorage.clear();
 };
 
-export { getApi, deleteApi };
+export { getApi,deleteApi };
