@@ -1,8 +1,5 @@
-
 import React from 'react'
 import HeroSection from './heroSection/heroSection'
-import Header from '../common/Header'
-import Footer from '../common/Footer'
 import NewCourse from './NewCourse/NewCourse'
 import News from './Newss/News'
 import BestSellers from './bestSellers/BestSellers'
@@ -16,9 +13,6 @@ const LandingHolder = () => {
   return (
     <div className='h-[6000px]'>
       <Background/>
-
-        <Header/>
-
         <HeroSection/>
         <NewCourse />
         <News/>
@@ -26,8 +20,6 @@ const LandingHolder = () => {
         <Services/>
         <UserCounter/>
         <CategoryBoxes/>
-        
-        <Footer/>
     </div>
   )
 }

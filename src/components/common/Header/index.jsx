@@ -20,7 +20,7 @@ const Header = () => {
       <img id='image' onClick={DarkMode} className='cursor-pointer bg-transparent w-9 h-9' src='../../../../public/2.png'/>
         <img onClick={Profile} className='cursor-pointer bg-transparent w-9 h-9' src='../../../../public/1.png'/>
       </div>
-      <div className='Menu flex justify-center gap-5 h-full font-bold items-center'>
+      <div className='Menu flex gap-5 h-full z-10 font-bold items-center'>
         <Logo/>   
         <Link to={`/`} className='cursor-pointer'>خانه</Link>     
         <Link to={`/Courses`} className='cursor-pointer'>دوره ها</Link>     

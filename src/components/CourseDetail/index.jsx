@@ -1,6 +1,4 @@
 import React , {useEffect , useState} from 'react'
-import Header from '../common/Header'
-import Footer from '../common/Footer'
 import CourseDetailHandler from './CourseDetailHandler'
 import { GetCourseList } from '../../core/services/api/Courses'
 import './CourseDetailResponsive.css'
@@ -20,9 +18,7 @@ useEffect(() => {
 
   return (
     <div className='Detail w-[1100px]'>
-        <Header/>
         <CourseDetailHandler CourseList={CourseList}/>
-        <Footer/>
     </div>
   )
 }

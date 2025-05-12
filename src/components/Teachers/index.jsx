@@ -1,6 +1,4 @@
 import React , {useState , useEffect} from 'react'
-import Header from '../common/Header'
-import Footer from '../common/Footer'
 import { TeachInfoHandler } from './TeachInfoHandler'
 import { GetTeachersInfo } from '../../core/services/api/teacher'
 import './teacherResponsive.css'
@@ -24,7 +22,6 @@ const Teacher = () => {
 
   return (
     <div className='Teacher w-280 z-50 h-[2600px] overflow-hidden'>
-        <Header/>
         <img src={path} alt="" className='absolute top-[400px] left-[600px]'/>
         <img src={pathh} alt="" className='absolute top-[1900px] right-[600px]'/>
         {/* {/* <img src={pathh} alt="" className=' absolute'/> */}
@@ -40,8 +37,6 @@ const Teacher = () => {
             </div>
             
         </div>
-
-        <Footer/>
     </div>
   )
 }

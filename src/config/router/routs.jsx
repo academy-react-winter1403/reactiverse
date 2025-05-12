@@ -10,17 +10,23 @@ import StepThree from "../../components/LoginForm/register/step3/index.jsx";
 import CourseDetail from "../../components/CourseDetail/index.jsx";
 import BlogDetail from '../../components/BlogDetail/index.jsx'
 import Landing from '../../components/LandingHolder/index.jsx'
+import Roots from "../../components/roots.jsx";
 
 export const Routes = createBrowserRouter([
     {path:"/registerStepOne" , element: <StepOne/>},
     {path:"/registerStepTwo" , element: <StepTwo/>},
     {path:"/registerStepThree" , element: <StepThree/>},
     {path:"/login" , element: <Login/>},
-    {path:"*" , element:<Error/>},
-    {path:"/blog" , element:<Blog/>},
-    {path:"/courses" , element:<Courses/>},
-    {path:"/courses/courseDetail/:courseId" , element:<CourseDetail/>},    
-    {path:"/teacher" , element:<Teacher/>},
-    {path:"/",element:<Landing/>},
-    {path:"/blog/detail/:id",element:<BlogDetail/>}
+    {path:"*" , element:<Error/>},  
+    {path:"/",
+        element:<Roots/>,
+        children:[
+            {path:"/",element:<Landing/>},
+            {path:"/teacher" , element:<Teacher/>},
+            {path:"/blog" , element:<Blog/>},
+            {path:"/blog/detail/:id",element:<BlogDetail/>},
+            {path:"/courses" , element:<Courses/>},
+            {path:"/courses/courseDetail/:courseId" , element:<CourseDetail/>}
+        ]
+    }
 ])

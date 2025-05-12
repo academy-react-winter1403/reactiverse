@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../common/Header';
-import Footer from '../common/Footer';
 import { GetCourseList } from '../../core/services/api/Courses';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -86,7 +84,6 @@ useEffect(() => {
 
   return (
     <div className='Courses w-[1100px]'>
-        <Header/>
         <div className='mb-9 text-left bg-transparent flex justify-between light mt-9'><h2 className='font-bold text-2xl mr-5 text-[#5c5c5c]'>دوره ها</h2><p className='ml-5 font-bold'>دوره آموزشی 5</p></div>
         <div className='mb-14 w-full'>
         <SearchBar CourseList={CourseList} setQuery={setQuery} handleFlag={handleFlag}/>
@@ -140,7 +137,6 @@ useEffect(() => {
                 </div>  
             </div>
         </div>
-        <Footer/>
     </div>
 
   )

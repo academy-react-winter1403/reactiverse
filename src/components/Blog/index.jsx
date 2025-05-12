@@ -44,7 +44,6 @@ const Blog = () => {
 
   return (
     <div className='Blog bg-transparent max-w-280'>
-      <Header/>
       <SearchBar NewsList={NewsList} setQuery={setQuery} handleFlag={handleFlag}/>
       <div className='h-28 flex items-center justify-center'>
         <span className='border-b-7 border-gray-500 border-solid text-left w-120 font-bold text-gray-500 text-xl'>1404/01/4</span>
@@ -59,7 +58,6 @@ const Blog = () => {
           <img className='cursor-pointer' onClick={right} src='./right.png'/>
         </div>               
       </div>
-      <Footer/>
     </div>
   )
 }
