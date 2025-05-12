@@ -1,0 +1,10 @@
+@media screen and (max-width:950px){
+    .hide{
+        display: none;
+    }
+}
+@media screen and (max-width:750px){
+    .Search{
+        height: 50px;
+    }
+}
