@@ -1,23 +1,26 @@
 import React, { useEffect, useRef, useState } from "react";
 
-//import mediaQuery from "../../core/utils/mediaQuery.utils";
+import mediaQuery from "../../core/utils/mediaQuery.utils";
 import { Outlet } from "react-router";
 import AccountBtn from "../../components/panel/AccountButton"
-import DarkModeBtn from "../../components/panel/DarkModeBtn"
+import DarkBtn from "../../components/panel/DarkModeBtn"
 import HamburgerBtn from "../../components/common/responsiveBtn"
+import Welcome from "../../components/panel/Welcome"
+import SideBar from "../../components/panel/panelSideBar"
+
 const Panel = ({ name }) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-  // useEffect(() => {
-  //   mediaQuery(
-  //     "(min-width:768px)",
-  //     () => {
-  //       setIsSideBarOpen(true);
-  //     },
-  //     () => {
-  //       setIsSideBarOpen(false);
-  //     }
-  //   );
-  // }, []);
+  useEffect(() => {
+    mediaQuery(
+      "(min-width:768px)",
+      () => {
+        setIsSideBarOpen(true);
+      },
+      () => {
+        setIsSideBarOpen(false);
+      }
+    );
+  }, []);
   return (
     <div className="flex flex-row flex-nowrap w-1/1">
       {isSideBarOpen && <SideBar />}
