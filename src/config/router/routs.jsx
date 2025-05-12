@@ -24,5 +24,6 @@ export const Routes = createBrowserRouter([
     {path:"/courses/courseDetail/:courseId" , element:<CourseDetail/>},    
     {path:"/teacher" , element:<Teacher/>},
     {path:"/",element:<Landing/>},
-    {path:"/blog/detail/:id",element:<BlogDetail/>}
+    {path:"/blog/detail/:id",element:<BlogDetail/>},
+    {}
 ])
