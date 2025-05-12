@@ -1,25 +1,23 @@
 import React, { useEffect, useRef, useState } from "react";
-import SideBar from "../../components/common/panelSideBar";
-import Welcome from "../../components/panel/welcome";
-import AccountBtn from "../../components/common/AccountButton";
-import DarkBtn from "../../components/common/DarkModeBtn";
-import HamburgerBtn from "../../components/common/responsiveBtn";
-import mediaQuery from "../../core/utils/mediaQuery.utils";
-import { Outlet } from "react-router";
 
+//import mediaQuery from "../../core/utils/mediaQuery.utils";
+import { Outlet } from "react-router";
+import AccountBtn from "../../components/panel/AccountButton"
+import DarkModeBtn from "../../components/panel/DarkModeBtn"
+import HamburgerBtn from "../../components/common/responsiveBtn"
 const Panel = ({ name }) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-  useEffect(() => {
-    mediaQuery(
-      "(min-width:768px)",
-      () => {
-        setIsSideBarOpen(true);
-      },
-      () => {
-        setIsSideBarOpen(false);
-      }
-    );
-  }, []);
+  // useEffect(() => {
+  //   mediaQuery(
+  //     "(min-width:768px)",
+  //     () => {
+  //       setIsSideBarOpen(true);
+  //     },
+  //     () => {
+  //       setIsSideBarOpen(false);
+  //     }
+  //   );
+  // }, []);
   return (
     <div className="flex flex-row flex-nowrap w-1/1">
       {isSideBarOpen && <SideBar />}

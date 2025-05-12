@@ -11,6 +11,7 @@ import StepThree from "../../components/LoginForm/register/step3/index.jsx";
 import CourseDetail from "../../components/CourseDetail/index.jsx";
 import BlogDetail from '../../components/BlogDetail/index.jsx'
 import Landing from '../../components/LandingHolder/index.jsx'
+import Panel from "../../screens/Panel"
 
 export const Routes = createBrowserRouter([
     {path:"/registerStepOne" , element: <StepOne/>},
@@ -25,5 +26,5 @@ export const Routes = createBrowserRouter([
     {path:"/teacher" , element:<Teacher/>},
     {path:"/",element:<Landing/>},
     {path:"/blog/detail/:id",element:<BlogDetail/>},
-    {}
+    {path:"/panel",element:<Panel/>}
 ])
