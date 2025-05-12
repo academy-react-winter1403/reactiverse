@@ -5,23 +5,48 @@
 
 
 @import "tailwindcss";
-
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  background: #eee;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "tailwindcss";
+@theme{
+  --radius-xl:34px;
+  --radius-fullXl:100%;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+.backgroundSize{
+  background-size:20px 85%;
+}
+.backgroundSize2{
+  background-size: 30px 30px;
+}
+.active{
+  color:blue;
+  font-weight: 600;
 }
 
+body{
+  direction: rtl;
+}
+html.dark>body{
+  background-color: #2a2525;
+}
+@keyframes move{
+  0%{
+    left:800px;
+    transform: scaleY(0);
+  }
+  100%{
+    transform: scaleY(1);
+    left:0;
+  }
+}
+@keyframes moveIt{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    
+  }
+}
 /* a {
   font-weight: 500;
    color: #666666; 
@@ -68,7 +93,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -79,7 +104,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 @import 'tailwindcss';
 .myTransform{
