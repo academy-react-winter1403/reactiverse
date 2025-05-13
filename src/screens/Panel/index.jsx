@@ -24,7 +24,7 @@ const Panel = ({ name }) => {
   return (
     <div className="flex flex-row flex-nowrap w-1/1">
       {isSideBarOpen && <SideBar />}
-      <div className=" md:w-69/100 mt-5 w-1/1">
+      <div className="md:w-69/100 mt-5 w-1/1">
         <HamburgerBtn
           isOpen={isSideBarOpen}
           setOpen={setIsSideBarOpen}

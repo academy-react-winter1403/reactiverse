@@ -1,11 +1,5 @@
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 @import "tailwindcss";
-@import "tailwindcss";
+
 @theme{
   --radius-xl:34px;
   --radius-fullXl:100%;
@@ -105,8 +99,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-
-@import 'tailwindcss';
 .myTransform{
     transform: scale(0.9) translate(10px) rotate(10deg);
 }
