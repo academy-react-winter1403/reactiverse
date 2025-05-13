@@ -5,7 +5,7 @@ import { GetCourseList } from '../../core/services/api/Courses';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import CourseInfoHandler from './courseinfoHandler';
-import SearchBar from '../common/SearchBar';
+//import SearchBar from '../common/SearchBar';
 import './CoursesResponsive.css'
 
 const Courses = () => {
@@ -73,26 +73,24 @@ const showPrice = () => {
 
 }
 
-const getList = async() =>{
+const  getList = async() =>{
     const course = await GetCourseList(Query); 
     setCourseList(course);
 }
 
 useEffect(() => {
-    getList();
+    getList()
 }, [flag])
-
 
 
   return (
     <div className='Courses w-[1100px]'>
         <Header/>
-        <div className='mb-9 text-left bg-transparent flex justify-between light mt-9'><h2 className='font-bold text-2xl mr-5 text-[#5c5c5c]'>دوره ها</h2><p className='ml-5 font-bold'>دوره آموزشی 5</p></div>
-        <div className='mb-14 w-full'>
+        <div className='mb-15 text-left bg-transparent flex justify-between dark'><p className='ml-5 font-bold'>دوره آموزشی 5</p><h2 className='font-bold text-2xl mr-5'>دوره ها</h2></div>
+        <div className='mb-15 w-full'>
         <SearchBar CourseList={CourseList} setQuery={setQuery} handleFlag={handleFlag}/>
             <div className='Main relative flex flex-row-reverse gap-2'>  
-            <CourseInfoHandler CourseList={CourseList}/>
-                <div className='Filters light bg-gray-200  font-bold rounded-xl mt-7 h-[275px] w-1/4'>
+                <div className='Filters dark bg-gray-700 font-bold rounded-xl mt-7 h-69 w-1/4'>
                     <div onClick={deleteFilter} className='border-2 border-gray-400 rounded-xl m-2 p-2 hover:bg-gray-600'>حذف فیلتر ها</div>
                     <div className='flex justify-between border-2 border-gray-400 rounded-xl m-2 p-2'>
                         <div onClick={complete} className='border-2 border-gray-400 border-solid w-10 h-6 relative rounded-2xl cursor-pointer'>
@@ -107,7 +105,7 @@ useEffect(() => {
                             <img className='mt-2 w-4 h-3 rounded-[4px] bg-gray-500' src='./7.png'/>
                             <div>تکنولوژی</div>                            
                         </div>
-                        <div className='absolute rounded-b-2xl w-full h-0 duration-300 overflow-hidden outline-0 outline-gray-600 light bg-gray-200 z-50 group-hover:h-44 group-hover:outline-2'>
+                        <div className='absolute rounded-b-2xl w-full h-0 duration-300 overflow-hidden outline-0 outline-gray-400 dark bg-gray-700 z-50 group-hover:h-44 group-hover:outline-2'>
                             <h2 onClick={() => filterByTechnology("123React")}  className='border-2 p-1 border-gray-400 mb-2 rounded-b-2xl hover:bg-red-600'> 123React</h2>
                             <h2 onClick={() => filterByTechnology("NextJs")} className='border-2 p-1 border-gray-400 mb-2 rounded-2xl hover:bg-amber-600'>NextJs</h2>
                             <h2 onClick={() => filterByTechnology("فرانت اند2")} className='border-2 p-1 border-gray-400 mb-2 rounded-2xl hover:bg-yellow-400'>فرانت اند2</h2>
@@ -119,7 +117,7 @@ useEffect(() => {
                             <img className='mt-2 w-4 h-3 rounded-[4px] bg-gray-500' src='./7.png'/>
                             <div>دسته بندی</div>                            
                         </div>
-                        <div className='absolute rounded-b-2xl w-full h-0 duration-300 overflow-hidden outline-0 outline-gray-600 light bg-gray-200 group-hover:h-34 group-hover:outline-2'>
+                        <div className='absolute rounded-b-2xl w-full h-0 duration-300 overflow-hidden outline-0 outline-gray-400 dark bg-gray-700 group-hover:h-34 group-hover:outline-2'>
                             <h2 onClick={() => abcd("نامبتدی 1233")} className='border-2 p-1 border-gray-400 mb-2 rounded-b-2xl hover:bg-blue-700'>نامبتدی 1234</h2>
                             <h2 onClick={() => abcd("متوسط")} className='border-2 p-1 border-gray-400 mb-2 rounded-2xl hover:bg-cyan-500'>متوسط</h2>
                             <h2 onClick={() => abcd("پیشرفته")} className='border-2 p-1 border-gray-400 mb-2 rounded-2xl hover:bg-green-600'>پیشرفته</h2>
@@ -128,7 +126,7 @@ useEffect(() => {
                     <div className='border-2 border-gray-400 rounded-xl m-2'>
                         <output className='block'>{Price} از0 تا</output>
                         <input 
-                        className='Price appearance-none w-50 accent-gray-500 bg-[#23496b] h-2 rounded-lg cursor-pointer'
+                        className='Price appearance-none w-50 accent-gray-500 bg-red-700 h-2 rounded-lg cursor-pointer'
                         type='range' 
                         value={Price} 
                         step="10000" 
@@ -138,6 +136,7 @@ useEffect(() => {
                         onInput={showPrice}/>                         
                     </div>                                                           
                 </div>  
+                <CourseInfoHandler CourseList={CourseList}/>
             </div>
         </div>
         <Footer/>
