@@ -12,6 +12,8 @@ import CourseDetail from "../../components/CourseDetail/index.jsx";
 import BlogDetail from '../../components/BlogDetail/index.jsx'
 import Landing from '../../components/LandingHolder/index.jsx'
 import Panel from "../../screens/Panel"
+import Purchaseds from "../../components/panel/Purchaseds.jsx";
+import AddTicket from "../../components/panel/tickets/AddTicket.jsx";
 
 export const Routes = createBrowserRouter([
     {path:"/registerStepOne" , element: <StepOne/>},
@@ -26,5 +28,23 @@ export const Routes = createBrowserRouter([
     {path:"/teacher" , element:<Teacher/>},
     {path:"/",element:<Landing/>},
     {path:"/blog/detail/:id",element:<BlogDetail/>},
-    {path:"/panel",element:<Panel/>}
+     {
+    path: "/panel",
+    element: <Panel />,
+    children: [
+      {
+        index: true,
+        path: "/panel",
+        element: <Purchaseds />,
+      },
+      {
+        path: "/panel/tickets",
+        element: <AddTicket />,
+      },
+      {
+        path: "/panel/myCourses",
+        element: <ManupilatedCourses/>,
+      },
+    ],
+  },
 ])
